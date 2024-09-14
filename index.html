@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sitio de Ventas Consultivas</title>
+    <title>Estrategias Avanzadas en Ventas Consultivas para Negocios y Emprendimientos</title>
     <style>
         body {
             background-color: red;
+            color: blue;
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            color: yellow;
             text-align: center;
         }
         h1 {
@@ -22,7 +22,7 @@
         button {
             background-color: yellow;
             color: blue;
-            font-size: 20px;
+            font-size: 18px;
             padding: 10px 20px;
             border: none;
             cursor: pointer;
@@ -48,32 +48,67 @@
             height: 300px;
             object-fit: cover;
         }
+        .section {
+            margin: 40px 0;
+        }
+        iframe {
+            width: 100%;
+            max-width: 560px;
+            height: 315px;
+        }
+        #map {
+            width: 100%;
+            height: 400px;
+        }
     </style>
 </head>
 <body>
 
-    <h1>Página de Ventas Consultivas</h1>
+    <h1>Estrategias Avanzadas en Ventas Consultivas para Negocios y Emprendimientos</h1>
     
     <div class="buttons-container">
         <button onclick="changeColor('blue')">Fondo Azul</button>
         <button onclick="changeColor('green')">Fondo Verde</button>
         <button onclick="changeColor('purple')">Fondo Morado</button>
+        <button onclick="changeColor('yellow')">Fondo Amarillo</button>
+        <button onclick="changeColor('orange')">Fondo Naranja</button>
     </div>
 
     <div class="carousel-container">
         <div class="carousel-images" id="carousel">
-            <img src="https://via.placeholder.com/1200x300?text=Imagen+1" alt="Imagen 1">
-            <img src="https://via.placeholder.com/1200x300?text=Imagen+2" alt="Imagen 2">
-            <img src="https://via.placeholder.com/1200x300?text=Imagen+3" alt="Imagen 3">
+            <img src="https://via.placeholder.com/1200x300?text=Ventas+Consultivas+1" alt="Ventas 1">
+            <img src="https://via.placeholder.com/1200x300?text=Ventas+Consultivas+2" alt="Ventas 2">
+            <img src="https://via.placeholder.com/1200x300?text=Ventas+Consultivas+3" alt="Ventas 3">
+            <img src="https://via.placeholder.com/1200x300?text=Ventas+Consultivas+4" alt="Ventas 4">
+            <img src="https://via.placeholder.com/1200x300?text=Ventas+Consultivas+5" alt="Ventas 5">
         </div>
     </div>
 
-    <div class="video-container">
+    <div class="section">
+        <h2>¿Qué son las Ventas Consultivas?</h2>
+        <p>Las ventas consultivas son un enfoque de ventas que pone el foco en entender las necesidades y desafíos del cliente, ofreciendo soluciones personalizadas en lugar de un producto genérico.</p>
+    </div>
+
+    <div class="section">
+        <h2>Ubicación</h2>
+        <div id="map"></div>
+    </div>
+
+    <div class="section">
         <h2>Videos sobre Ventas Consultivas</h2>
-        <video controls width="500">
-            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-            Tu navegador no soporta la etiqueta de video.
-        </video>
+        <iframe src="https://www.youtube.com/embed/vlDzYIIOYmM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <div class="section">
+        <h2>Botones de Navegación</h2>
+        <div class="buttons-container">
+            <button onclick="window.location.href='#'">Inicio</button>
+            <button onclick="window.location.href='#'">Quienes Somos</button>
+            <button onclick="window.location.href='#'">Biografía</button>
+            <button onclick="window.location.href='#'">Ubicación</button>
+            <button onclick="window.location.href='#'">Precios</button>
+        </div>
     </div>
 
     <script>
@@ -91,6 +126,21 @@
             carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
         }
         setInterval(moveCarousel, 2000); // Cambia la imagen cada 2 segundos
+
+        // Cargar mapa centrado en Monterrey
+        function initMap() {
+            const monterrey = { lat: 25.686614, lng: -100.316113 };
+            const map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 14,
+                center: monterrey
+            });
+            const marker = new google.maps.Marker({
+                position: monterrey,
+                map: map
+            });
+        }
     </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
+
 </body>
 </html>
