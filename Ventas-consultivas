@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ventas Consultivas - Capacitium X</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            color: #2E86C1;
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ventas Consultivas: Enfoque en la Solución</h1>
+    <p>
+        Las <strong>ventas consultivas</strong> se centran en identificar las necesidades específicas del cliente para ofrecer soluciones personalizadas, más allá de solo vender un producto o servicio. Este enfoque pone al cliente en el centro del proceso de ventas, lo que implica comprender sus desafíos y objetivos, y luego presentar una propuesta que agregue valor real a su situación.
+    </p>
+    <p>
+        A diferencia de las ventas tradicionales, donde el objetivo principal es cerrar la transacción, en las ventas consultivas el objetivo es crear una relación a largo plazo, basada en la confianza y el entendimiento profundo de las necesidades del cliente. El vendedor actúa más como un asesor que como un simple proveedor, brindando recomendaciones que realmente resuelvan problemas o mejoren el rendimiento del negocio del cliente.
+    </p>
+    <p>
+        Entre las habilidades clave en este tipo de venta se encuentran la escucha activa, la formulación de preguntas estratégicas y la capacidad de generar propuestas personalizadas. De esta forma, las ventas consultivas no solo permiten concretar más negocios, sino también fortalecer la lealtad del cliente.
+    </p>
+</body>
+</html>
